@@ -1,0 +1,14 @@
+{
+  "AMZN": {"shares": 6, "avg_cost": 267.21, "type": "core"},
+  "AVGO": {"shares": 5, "avg_cost": 425.68, "type": "core"},
+  "BE": {"shares": 4, "avg_cost": 270.83, "type": "high_beta"},
+  "CLS": {"shares": 5, "avg_cost": 373.73, "type": "high_beta"},
+  "CRDO": {"shares": 8, "avg_cost": 175.18, "type": "high_beta"},
+  "GOOG": {"shares": 5, "avg_cost": 383.35, "type": "core"},
+  "JNJ": {"shares": 5, "avg_cost": 208.42, "type": "defensive"},
+  "MRK": {"shares": 4, "avg_cost": 119.74, "type": "defensive"},
+  "MSFT": {"shares": 5, "avg_cost": 419.08, "type": "core"},
+  "PG": {"shares": 5, "avg_cost": 147.29, "type": "defensive"},
+  "PLTR": {"shares": 7, "avg_cost": 133.39, "type": "high_beta"},
+  "QQQ": {"shares": 3, "avg_cost": 698.65, "type": "core"}
+}
