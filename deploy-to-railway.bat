@@ -31,7 +31,7 @@ if errorlevel 1 (
 
 echo.
 echo Syncing with GitHub...
-git pull --rebase origin main
+git pull --rebase --autostash origin main
 if errorlevel 1 goto error
 
 echo.
