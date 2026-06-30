@@ -123,6 +123,19 @@ def normalize_reasons(value):
     return [str(value).strip()]
 
 
+def parse_score(value):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def format_score(value):
+    if isinstance(value, float) and value.is_integer():
+        return str(int(value))
+    return str(value)
+
+
 def build_message(ticker, signal, price=None, filtered=False, context=None):
     context = context or {}
     portfolio = load_portfolio()
@@ -130,6 +143,10 @@ def build_message(ticker, signal, price=None, filtered=False, context=None):
     position = portfolio.get(ticker)
 
     score, score_reasons = score_alert(ticker, signal, price)
+    supplied_score = parse_score(first_available(context, "score", "alert_score"))
+    if supplied_score is not None:
+        score = supplied_score
+
     supplied_reasons = normalize_reasons(
         first_available(context, "reasons", "reason", "explanation")
     )
@@ -185,7 +202,7 @@ def build_message(ticker, signal, price=None, filtered=False, context=None):
     if technical_lines:
         lines.extend([""] + technical_lines)
 
-    lines.extend(["", f"Score: {score}/10"])
+    lines.extend(["", f"Score: {format_score(score)}/10"])
 
     if qqq_market is not None:
         lines.extend(["", "QQQ Market:", str(qqq_market)])
