@@ -1,14 +1,62 @@
 {
-  "AMZN": {"shares": 6, "avg_cost": 267.21, "type": "core"},
-  "AVGO": {"shares": 5, "avg_cost": 425.68, "type": "core"},
-  "BE": {"shares": 4, "avg_cost": 270.83, "type": "high_beta"},
-  "CLS": {"shares": 5, "avg_cost": 373.73, "type": "high_beta"},
-  "CRDO": {"shares": 8, "avg_cost": 175.18, "type": "high_beta"},
-  "GOOG": {"shares": 5, "avg_cost": 383.35, "type": "core"},
-  "JNJ": {"shares": 5, "avg_cost": 208.42, "type": "defensive"},
-  "MRK": {"shares": 4, "avg_cost": 119.74, "type": "defensive"},
-  "MSFT": {"shares": 5, "avg_cost": 419.08, "type": "core"},
-  "PG": {"shares": 5, "avg_cost": 147.29, "type": "defensive"},
-  "PLTR": {"shares": 7, "avg_cost": 133.39, "type": "high_beta"},
-  "QQQ": {"shares": 3, "avg_cost": 698.65, "type": "core"}
+  "ASX": {
+    "shares": 5.0,
+    "average_price": 40.41,
+    "currency": "USD"
+  },
+  "BE": {
+    "shares": 1.0,
+    "average_price": 304.55,
+    "currency": "USD"
+  },
+  "CRDO": {
+    "shares": 3.0,
+    "average_price": 258.394,
+    "currency": "USD"
+  },
+  "GOOG": {
+    "shares": 1.0,
+    "average_price": 358.921,
+    "currency": "USD"
+  },
+  "HOOD": {
+    "shares": 2.0,
+    "average_price": 107.601,
+    "currency": "USD"
+  },
+  "JNJ": {
+    "shares": 6.0,
+    "average_price": 211.228,
+    "currency": "USD"
+  },
+  "MRK": {
+    "shares": 4.0,
+    "average_price": 119.74,
+    "currency": "USD"
+  },
+  "MSFT": {
+    "shares": 1.0,
+    "average_price": 385.301,
+    "currency": "USD"
+  },
+  "NVDA": {
+    "shares": 1.0,
+    "average_price": 209.62,
+    "currency": "USD"
+  },
+  "PG": {
+    "shares": 6.0,
+    "average_price": 146.979,
+    "currency": "USD"
+  },
+  "RKLB": {
+    "shares": 2.0,
+    "average_price": 104.761,
+    "currency": "USD"
+  },
+  "UNH": {
+    "shares": 2.5,
+    "average_price": 392.964,
+    "currency": "USD"
+  }
 }
